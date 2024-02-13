@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Crud</title>
+    <link rel="stylesheet" href="TheCrud.css">
+</head>
+<body>
+
+    <div class="container">
+                <div class="header">
+                    <h2>CRUDS</h2>
+                    <p>create read update delete search</p>
+                </div>
+        
+        <div class="inputs">
+                <input type="text" placeholder="title" id="title">
+                    <div class="prices">
+                        <input type="number" onkeyup="gettotal()" placeholder="price" id="price">
+                        <input type="number"  onkeyup= "gettotal()" placeholder="taxes" id="taxes">
+                        <input type="number" onkeyup= "gettotal()" placeholder="ads" id="ads">
+                        <input type="number" onkeyup= "gettotal()" placeholder="discount" id="discount">
+                        <small id="total"></small>
+                    </div>
+                <input type="number" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+                <button id="create">create</button>
+                <input type="text" placeholder="Search" onkeyup="searchitems(this.value)" id="search">
+            </div>
+
+
+            <div class="outputs">
+                <div class="buttons">
+                    <button id="searchtitle" onclick="getsearch(this.id)">search by title</button>
+                    <button id="searchcategory" onclick="getsearch(this.id)">search by category</button>
+                </div>
+              <div id="deleteall"></div>
+               
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Taxes</th>
+                            <th>Ads</th>
+                            <th>Discount</th>
+                            <th>Total</th>
+                            <th>Category</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody id="table">
+                           
+
+                        </tbody >
+                        
+                    </table>
+
+              
+
+            </div>
+
+            
+
+
+           
+           
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="TheCrud.js"></script>
+</body>
+</html>

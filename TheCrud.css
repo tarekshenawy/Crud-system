@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #222;
+}
+.container{
+    width:70%;
+    margin:20px auto 0;
+  
+}
+.header{
+    color:#fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.inputs input{
+    width: 100%;
+    padding:6px;
+    border-radius: 8px;
+    border: none;
+    margin: 3px auto 3px;
+    background-color: #111;
+    outline: none;
+    color:#fff;
+    transition:.5s;
+}
+.inputs input:focus{
+    transform: scale(1.1);
+}
+.prices{
+    display: flex;
+}
+.prices input{
+    margin:3px;
+}
+#total::before{
+    content:'total:'
+}
+#total{
+    background-color: rgba(255, 0, 0, 0.834);
+    border-radius: 10px;
+    padding:8px;
+    margin:3px;
+  
+}
+button{
+    width: 100%;
+    padding:5px;
+    border-radius: 8px;
+    border: none;
+    margin:2px;
+    background-color: blue;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+   
+}
+.outputs .buttons button{
+    border-radius: 10px;
+    width:350px;
+}
+.outputs .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+button:hover{
+    background-color: rgb(140, 0, 255);
+    
+}
+table{
+ width: 100%;
+ text-align: center;
+ margin:10px auto 0;
+ color:#fff;
+}
+table th{
+    text-transform: uppercase;
+    padding:4px;
+}
+table td{
+    padding:5px;
+}
